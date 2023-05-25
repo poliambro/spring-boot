@@ -4,7 +4,7 @@ import com.spring.sessions.springboot.models.Banco;
 import com.spring.sessions.springboot.payload.BancoRequest;
 import com.spring.sessions.springboot.payload.BancoResponse;
 import com.spring.sessions.springboot.payload.BaseResponse;
-import com.spring.sessions.springboot.services.BancoServiceImpl;
+import com.spring.sessions.springboot.services.BancoService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,7 +24,7 @@ import java.util.List;
 public class BancoController {
 
     @Autowired
-    private BancoServiceImpl bancoService;
+    private BancoService bancoService;
 
     private static final ModelMapper modelMapper = new ModelMapper();
 
